@@ -1,0 +1,72 @@
+/* this is header style */
+
+.navbar{
+    display:flex;
+
+}
+.menu ul{
+    display:flex;
+}
+.menu >ul>li{
+    text-decoration: none;
+    list-style: none;
+}
+/* styles for body */
+body{
+    font-family: 'Spline Sans', sans-serif;   
+}
+h1{
+    font-size: 52px;
+}
+/* this is first-section style */
+.first-section{
+    display:flex;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.first-img img{
+    width:60%;
+}
+.left-div{
+    flex:1;
+}
+.right-div{
+    flex:1;
+    margin-right: -25%;
+
+}
+.first-button{
+    background-color: #E02C6D;
+    color: white;
+    padding:15px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+/* section 2 styles */
+
+.sec-title{
+    text-align: center;
+}
+.popular-sec{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 30px 30px;
+    padding-left: 12%;
+    padding-right: 15%;
+}
+.sec{
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/* footer styles */
+.footer{
+    padding-top:125px;
+    height:250px;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
