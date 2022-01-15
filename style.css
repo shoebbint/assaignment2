@@ -160,3 +160,41 @@ form {
 /* ----------------
 responsive-styles
 ------------------ */
+@media (max-width: 480px) {
+  /* first-section */
+
+    .menu{
+        display:none;
+    }
+    .header-title h2{
+        text-align: center;
+    }
+    .first-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50%;
+    }
+    #right{
+        order:1;
+        padding-bottom: 50%;
+        margin-left: 20%;
+    }
+    #left{
+        order:2;
+        margin-top: 50%;
+        margin-left:-80%;
+        align-items: center;
+        justify-content: center;
+        }
+   /* second-sec */
+     .popular-sec{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+}
+    .sec-3 h1{
+        text-align: center;
+        padding-right: 80%;
+}
+}
