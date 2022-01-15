@@ -2,18 +2,32 @@
 
 .navbar{
     display:flex;
-
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-right: 8%;
+    justify-content: space-between;
+    background-color: lightseagreen;
+    color: white;
+    align-items: center;
 }
 .menu ul{
     display:flex;
+
 }
 .menu >ul>li{
-    text-decoration: none;
     list-style: none;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px;
+
 }
 /* styles for body */
 body{
-    font-family: 'Spline Sans', sans-serif;   
+    font-family: 'Spline Sans', sans-serif;  
 }
 h1{
     font-size: 52px;
@@ -23,6 +37,8 @@ h1{
     display:flex;
     padding-left: 8%;
     padding-right: 8%;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 .first-img img{
     width:60%;
@@ -33,10 +49,13 @@ h1{
 .right-div{
     flex:1;
     margin-right: -25%;
-
+}
+.right-div:hover{
+    width:80%;
+    transform:scale(120%);
 }
 .first-button{
-    background-color: #E02C6D;
+    background-color: lightseagreen;
     color: white;
     padding:15px 40px;
     border-radius: 30px;
@@ -44,6 +63,10 @@ h1{
     font-weight: 700;
     border: none;
 }
+.fas{
+    padding-left:8px;
+}
+
 /* section 2 styles */
 
 .sec-title{
@@ -57,16 +80,83 @@ h1{
     padding-right: 15%;
 }
 .sec{
-    background-color: whitesmoke;
+    background-color:rgba(32, 178, 171, 0.123);
     padding: 10px;
+}
+.ratings{
+    display: flex;
+}
+.percent{
+margin-left: 5%;
+margin-top: -5%;
+}
+.see-more{
+    text-align: right;
+    color: lightseagreen;
+    padding-right: 11.5%;
+}
+.fa-star{
+    color: goldenrod;
+}
+
+/* last sec styles */
+form h1 {
+    background-color: lightseagreen;
+    color: white;
+    font-weight: 50px;
+    margin-right: 60%;
+    border-radius: 30px;
+    padding-left:20px;
+
+}
+
+form {
+    margin-left: 10%;
+    margin-bottom: 40px;
+
+}
+
+#name,
+#email,
+#num {
+    width: 80%;
+    height: 30px;
+}
+#inquiry{
+    height:90px;
+    width:80%;
 }
 
 /* footer styles */
 .footer{
-    padding-top:125px;
+    padding-top:105px;
     height:250px;
     text-align: center;
     justify-content: center;
-    background-color: black;
+    background-color:lightseagreen ;
     color: white;
 }
+.footer-icon> .fab{
+    font-size: 25px;
+    padding:5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color:rgba(255, 255, 255, 0.15);
+}
+.fa-facebook:hover{
+    color: #0d8af0;
+}
+.fa-twitter:hover{
+    color: #5da9dd;
+}
+.fa-instagram:hover{
+    color: #e04a6d;
+}
+.fa-youtube:hover{
+    color: #fe0000;
+}
+/* ----------------
+responsive-styles
+------------------ */
