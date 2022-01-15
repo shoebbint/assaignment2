@@ -67,6 +67,43 @@ h1{
     padding-left:8px;
 }
 
+/*----------- 
+   animation
+----------- */
+.anim{
+    position:relative;
+    color: transparent;
+}
+.anim::before{
+
+    position: absolute;
+    content:'Influencer';
+    color:lightseagreen;
+    animation: typing 5s ease infinite;
+}
+@keyframes typing{
+    0%{content: 'I_';}
+    10%{content:'In_'}
+    15%{content:'Inf_'}
+    20%{content:'Infl_'}
+    25%{content:'Influ_'}
+    30%{content:'Influe_'}
+    35%{content:'Influenc_'}
+    40%{content:'Influence_'}
+    45%{content:'Influencer'}
+    90%{content:'Influencer'}
+    91%{content:'Influence_'}
+    92%{content:'Influenc_'}
+    93%{content:'Influen_'}
+    94%{content:'Influe_'}
+    95%{content:'Influ_'}
+    96%{content:'Infl_'}
+    97%{content:'Inf_'}
+    98%{content:'In_'}
+    99%{content:'I_'}
+    100%{content:'__'}
+
+}
 /* section 2 styles */
 
 .sec-title{
@@ -156,6 +193,9 @@ form {
 }
 .fa-youtube:hover{
     color: #fe0000;
+}
+.ftr{
+    color:rgba(0, 0, 0, 0.507);
 }
 /* ----------------
 responsive-styles
